@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B58989"
+    android:orientation="vertical"
+    tools:context=".HomeScreenActivity">
+
+    <TextView
+        android:id="@+id/homeScreen_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/heading_bg"
+        android:fontFamily="@font/copse"
+        android:padding="15dp"
+        android:text="Covid Tracker"
+        android:textColor="#810606"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/enter_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/homeScreen_heading"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/heading_bg"
+        android:hint="Enter date"
+        android:padding="10dp"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/fetch_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enter_date"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#000000"
+        android:text="Fetch Details"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:background="#B58989"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fetch_btn"
+        android:layout_marginTop="10dp"
+
+        android:orientation="vertical">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

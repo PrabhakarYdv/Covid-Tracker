@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/item_bg">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Date"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/dateShow"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_margin="20dp"-->
+        <!--            android:layout_toRightOf="@id/date"-->
+        <!--            android:text="Date"-->
+        <!--            android:textColor="#000000"-->
+        <!--            android:textSize="20dp" />-->
+
+
+        <TextView
+            android:id="@+id/positive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date"
+            android:layout_margin="20dp"
+            android:text="Positive :"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/positiveCaseShow"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@id/date"-->
+        <!--            android:layout_margin="20dp"-->
+        <!--            android:layout_toRightOf="@id/positive"-->
+        <!--            android:text="positive"-->
+        <!--            android:textColor="#000000"-->
+        <!--            android:textSize="20dp" />-->
+
+
+        <TextView
+            android:id="@+id/negative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/positive"
+            android:layout_margin="20dp"
+            android:text="Negative :"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/negativeCaseShow"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@id/positive"-->
+        <!--            android:layout_margin="20dp"-->
+        <!--            android:layout_toRightOf="@id/negative"-->
+        <!--            android:text="positive"-->
+        <!--            android:textColor="#000000"-->
+        <!--            android:textSize="20dp" />-->
+
+        <TextView
+            android:id="@+id/hospitalizedCurrently"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/negative"
+            android:layout_margin="20dp"
+            android:text="Currently Hospitallized :"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/hospitlized_currentlyShow"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@id/negative"-->
+        <!--            android:layout_margin="20dp"-->
+        <!--            android:layout_toRightOf="@id/hospitalizedCurrently"-->
+        <!--            android:text="positive"-->
+        <!--            android:textColor="#000000"-->
+        <!--            android:textSize="20dp" />-->
+
+
+        <TextView
+            android:id="@+id/onVentilatorCurrently"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hospitalizedCurrently"
+            android:layout_margin="20dp"
+            android:text="Ventilator Currently :"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/onVentilatorCurrentlyShow"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@id/hospitlized_currentlyShow"-->
+        <!--            android:layout_margin="20dp"-->
+        <!--            android:layout_toRightOf="@id/onVentilatorCurrently"-->
+        <!--            android:text="positive"-->
+        <!--            android:textColor="#000000"-->
+        <!--            android:textSize="20dp" />-->
+
+
+        <TextView
+            android:id="@+id/death"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/onVentilatorCurrently"
+            android:layout_margin="20dp"
+            android:text="Death :"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/deathShow"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@id/onVentilatorCurrently"-->
+        <!--            android:layout_margin="20dp"-->
+        <!--            android:layout_toRightOf="@id/death"-->
+        <!--            android:text="positive "-->
+        <!--            android:textColor="#000000"-->
+        <!--            android:textSize="20dp" />-->
+
+        <TextView
+            android:id="@+id/dateChecked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/death"
+            android:layout_margin="20dp"
+            android:text="Checked Date :"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/dateCheckedShow"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@id/deathShow"-->
+        <!--            android:layout_margin="20dp"-->
+        <!--            android:layout_toRightOf="@id/dateChecked"-->
+        <!--            android:text="positive"-->
+        <!--            android:textColor="#000000"-->
+        <!--            android:textSize="20dp" />-->
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
